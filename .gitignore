@@ -2,29 +2,57 @@
 .gradle/
 .kotlin/
 build/
-*/build/
+**/build/
 captures/
 .externalNativeBuild/
+**/.externalNativeBuild/
 .cxx/
+**/.cxx/
 local.properties
+
+# Android generated artifacts
+APK/
+app/release/
+**/outputs/
+**/intermediates/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+*.hprof
 
 # Android Studio / IntelliJ
 .idea/
 *.iml
+*.iws
 out/
 
 # VS Code / Cursor
 .vscode/
 .cursor/
 
-# Jupyter
+# Python / Jupyter helper scripts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
 .ipynb_checkpoints/
 
-# Build artifacts
-*.apk
-*.aab
-*.ap_
-*.dex
+# Generated reports, exports, and local backups
+output/
+*_backup_*.pptx
+*_backup_before_*.pptx
+*_FinalViva.pptx
+*.bak
+
+# Office temporary files
+~$*
+~WRL*.tmp
+*.tmp
 
 # Signing / local secrets
 *.jks
@@ -32,12 +60,15 @@ out/
 keystore.properties
 signing.properties
 secrets.properties
+*.properties.local
 .env
 .env.*
 
 # Logs
 *.log
+*.logcat
 
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
